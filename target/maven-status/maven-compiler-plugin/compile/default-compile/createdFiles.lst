@@ -1,0 +1,5 @@
+com\automation\demo\common\BaseTestCase.class
+com\automation\demo\pages\WebFlipkartHomePageImpl.class
+com\automation\demo\locator\repository\WebLocators$FlipkartHomePageLocators.class
+AutomationDemoProject\AutomationDemoProject\App.class
+com\automation\demo\locator\repository\WebLocators.class

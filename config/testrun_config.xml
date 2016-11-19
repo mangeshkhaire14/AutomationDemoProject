@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Automation Demo TestSuite" verbose="1">
+	<test name="Test suite 1">
+		<classes>
+			<class name="com.automation.demo.testsuite.FlikpartHomePageTest" />
+		</classes>
+	</test>
+</suite>
