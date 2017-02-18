@@ -40,7 +40,7 @@ public class WebFlipkartHomePageImpl implements FlipkartHomePageLocators {
 	@FindBy(css = FK_TOP_SEARCH_BOX_LOC)
 	WebElement topSearchBox;
 	@FindBy(css = SEARCH_SUBMIT_LOC)
-	WebElement submitButton;
+	WebElement submitButton
 
 	@FindBy(css = MENU_LINKS_LOC)
 	List<WebElement> menuLinks;
