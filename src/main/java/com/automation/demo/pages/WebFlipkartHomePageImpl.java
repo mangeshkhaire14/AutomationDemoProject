@@ -43,8 +43,8 @@ public class WebFlipkartHomePageImpl implements FlipkartHomePageLocators {
 	WebElement submitButton;
 
 	@FindBy(css = MENU_LINKS_LOC)
-	List<WebElement> menuLinks;
-
+	List<WebElement> menuLinks
+	
 	public WebElement getFlipkartLogoImage() {
 		return flipkartLogoImage;
 	}
