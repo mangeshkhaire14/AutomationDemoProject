@@ -15,7 +15,6 @@ public class FlikpartHomePageTest extends BaseTestCase {
 		flipkartHomePage.launchPage();
 		Assert.assertTrue(flipkartHomePage.getFlipkartLogoImage().isDisplayed());
 		flipkartHomePage.getTopSearchBox().sendKeys("Microsoft Lumia 535");
-		flipkartHomePage.getSubmitButton().click();
-		
+		//flipkartHomePage.getSubmitButton().click();
 	}
 }
