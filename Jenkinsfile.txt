@@ -1,22 +1,5 @@
-pipeline {
-	agent any
-    stages {
-			stage 'checkout '
-				node{
-   						 checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/mangeshkhaire14/AutomationDemoProject.git']]])
-			}
+stage 'checkout'
+	node{
+		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/mangeshkhaire14/AutomationDemoProject.git']]])
+	}
 
-			stage 'Build'
-				node{
-					    build job: 'AutomationDemoProject'
-			}
-			stage 'Test'
-				node{
-					  'Testing your application'
-			}
-			stage 'Deploy'
-				node{
-    				echo 'Deploying your application'
-    			}
-    		}
-}
