@@ -1,9 +1,9 @@
 stage 'checkout'
-	node{
+	node('Slave_1'){
 		checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/mangeshkhaire14/AutomationDemoProject.git']]])
 	}
 stage 'build'
-	node{
+		node('Slave_1'){
 		build 'AutomationDemoProject'
 	}
 stage 'test'
